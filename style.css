@@ -1,7 +1,7 @@
 .sidemenu{
     background-color: #041737; 
     width: 250px;
-    height: 100%;
+    height: auto;
     font-size: 14px;
 }
 .sidemenu h2{
@@ -10,12 +10,11 @@
     
 }
 .sidemenu ul li a:hover{
-    background-color: beige;
-    
-    border-radius: 15px;
+    color: #DEECF6;
+    border-left: 3px solid #DEECF6;
 
 }
-#Dash h5{
+#dash {
     background-color: #3963AD;
     color: #CED7EA;
     border-radius: 10px;
@@ -37,13 +36,32 @@
     color: #677e9e;
     width: 70%;
 }
+
+
+
 .card-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
+.card-title i{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
 .card:hover{
-    background-color: #829ab9;
+    box-shadow: 0px 0px 5px #041737;
+}
+.middle:hover{
+    box-shadow: 0px 0px 5px #041737;
+}
+.footer:hover{
+    box-shadow: 0px 0px 5px #041737;
+}
+.right-side:hover{
+    box-shadow: 0px 0px 5px #041737;
 }
 #card{
     margin-top: 5px;
@@ -52,23 +70,32 @@
 #card1{
     width: 100%;
     border-radius: 20px;
+    
+
+}
+.card-body{
+    opacity: 0.5;
+    cursor: pointer;
 }
 #card2{
     width: 100%;
     border-radius: 20px;
+    
+
 }
 #card3{
     width: 100%;
     border-radius: 20px;
+
+
 }
 
 .card-title i{
     color: #3A98B5;
     background-color: #DEECF6;
-    border-radius: 200px;
-    width: 25px;
-    text-align: center;
-    
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;    
 }
 .card-body h5{
     font-size: 16px;
@@ -91,15 +118,13 @@
 }
 body{
     background-color: #F0F1F3;
+    
 }
 #barchart-2{
     background-color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 15px;
-    width: 49%;
-   
-    
-    
+    width: 49%; 
 }
 .per{
     color: #6AB98A;
@@ -112,6 +137,9 @@ body{
     margin: 5px;
     
 }
+.tablemain{
+    width: 100%;
+}
 .table tbody td button{
     background-color: #D0ECDB;
 }
@@ -120,9 +148,8 @@ body{
     border: 2px solid #FFFFFF;
     border-radius: 15px;
     width: 30%;
-    
+    height: 100%; 
 }
-
 #main-content{
     margin-right: 15px;
 }
@@ -139,4 +166,193 @@ aside i{
 }
 .item-body p{
     margin: 0px;
+}
+#admin{
+    border: none;
+    outline: none;
+    background: transparent;
+    align-items: baseline;
+}
+.pe-lg-5 {
+    display: flex;
+    padding-right: 3rem !important;
+    align-items: center;
+    padding-left: 3px;
+}
+table button{
+    width: 90px;
+}
+#main-table{
+    width: 100%;
+    overflow: auto;
+    
+}   
+
+@media screen and (max-width:500px) {
+    .sidemenu{
+        background-color: #041737; 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+    #barchart-1{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px;
+    }
+    #barchart-2{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+       margin-top: 5px;
+    }
+    #main-content{
+        width: 100%;
+    }
+    #card{
+        margin-top: 5px;
+        border-radius: 25px;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex-direction: column;
+            
+    }
+
+    #card1{
+        width: 100%;
+        height: 100%;
+    }
+    #card2{
+        width: 100%;
+        height: 100%;
+    }
+    #card3{
+        width: 100%;
+        height: 100%;
+    }
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    #over{
+        width: 50%;
+    }
+    .tablemain{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+        
+    }
+    .tablemain{
+        width: 50%;
+
+    }
+    .admin img,h5{
+        margin-left: 3px;
+    }
+    #main-table{
+        width: 100%;
+        overflow: scroll;
+    }
+    table{
+        width: 100%;
+    }
+    table button{
+        width: 50px;
+    }
+    table td{
+        width: 15px;
+    }
+    .side-main h2{
+    
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    
+    
+}
+@media screen and (min-width:500px ) and (max-width:900px) {
+    body{
+        width: 100%;
+    }
+    .container{
+        margin-left: 0px;
+    }
+    .sidemenu{
+        background-color: #041737; 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+    .main{
+        width: 100vw;
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .main1{
+        width: 100%;
+        
+    
+    }
+    #barchart-1{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5px;
+    }
+    #barchart-2{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+       margin-top: 5px;
+    }
+    #card1{
+        width: 100%;
+        height: 100%;
+    }
+    #card2{
+        width: 100%;
+        height: 100%;
+    }
+    #card3{
+        width: 100%;
+        height: 100%;
+    }
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    #over{
+        width: 50%;
+    }
+    #main-table{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+        
+    }
+    .tablemain{
+        object-fit: contain;
+
+    }    
+    
+}
+@media screen and (min-width:900px ) and (max-width:1000px){
+    body{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
 }
