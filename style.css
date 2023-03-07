@@ -74,8 +74,13 @@
 
 }
 .card-body{
-    opacity: 0.5;
+    opacity: 0.3;
     cursor: pointer;
+}
+.card-body:hover{
+    opacity: 1;
+    
+    transition: all 3s ease;
 }
 #card2{
     width: 100%;
